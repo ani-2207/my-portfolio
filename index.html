@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anisha Tiu — Computer Science Engineer</title>
+
+  <!-- Google Fonts: Fraunces (headings), Inter (body text), JetBrains Mono (labels/tags) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+ṇ
+  <!-- All styling lives in style.css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Decorative background: faint contour lines, purely visual -->
+  <svg class="contours" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+    <g fill="none" stroke="#1B2A4A" stroke-width="1">
+      <path d="M-50,780 Q300,700 600,760 T1250,700" opacity="0.06" />
+      <path d="M-50,820 Q320,750 620,800 T1250,750" opacity="0.05" />
+      <path d="M-50,860 Q340,800 640,840 T1250,800" opacity="0.04" />
+      <path d="M-50,120 Q300,60 650,110 T1250,70" opacity="0.05" />
+      <path d="M-50,160 Q320,110 660,150 T1250,110" opacity="0.04" />
+    </g>
+  </svg>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header>
+    <div class="wrap header-inner">
+      <div class="logo">Anisha Tiu</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- Hamburger button: only visible on mobile (see style.css) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav menu: hidden by default, toggled by script.js -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Computer Science &amp; Engineering</div>
+      <h1 class="display">
+        Applying <em>Python, Machine Learning</em> and Web Development to real-world problems.
+      </h1>
+      <p class="lede">
+        CSE diploma graduate from Government Women's Polytechnic, Jamshedpur,
+        seeking a role to keep learning and contribute to technology-driven progress.
+      </p>
+      <div class="hero-links">
+        <a href="#experience" class="btn primary">View Experience</a>
+        <!-- Update this email if needed -->
+        <a href="mailto:tiuanisha48@gmail.com" class="btn ghost">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / EDUCATION ============ -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-label">01 — About</div>
+      <h2 class="section-title">Education &amp; background</h2>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            <strong>Diploma in Computer Science Engineering</strong><br />
+            Jharkhand University of Technology (JUT), Government Women's Polytechnic, Jamshedpur — 2023 to 2026
+          </p>
+          <p><strong>Matriculation (10th), CBSE, ST.Viveka English Medium School, Chaibasa, Jharkhand</strong> — 2009 to 2021</p>
+        </div>
+
+        <div class="stat-block">
+          <div class="stat">
+            <span class="stat-label">Diploma CGPA</span>
+            <span class="stat-value">8.55</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">10th Percentage</span>
+            <span class="stat-value">78.6%</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Location</span>
+            <span class="stat-value">Chaibasa, Jharkhand</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Languages</span>
+            <span class="stat-value">English, Hindi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title">Technical skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Programming Languages</h3>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">C</span>
+            <span class="tag">Java</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Web Technologies</h3>
+          <div class="tag-row">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="tag-row">
+            <span class="tag">Flask</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Database</h3>
+          <div class="tag-row">
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Database</h3>
+          <div class="tag-row">
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="tag-row">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Tableau</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Core Domain</h3>
+          <div class="tag-row">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Artificial Intelligence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-label">03 — Experience</div>
+      <h2 class="section-title">Work experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-period">Mar–Jun 2026</div>
+        <div>
+          <div class="exp-role">E-Commerce Executive Intern</div>
+          <div class="exp-org">OTS World, Ranchi — 12 Weeks</div>
+          <ul>
+            <li>Managed end-to-end Flipkart Seller Hub operations including order management and SPF (Seller Protection Fund) claims</li>
+            <li>Updated and maintained product listings on the Flipkart platform</li>
+            <li>Maintained Excel-based tracking systems for orders, claims, and inventory data</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">8 Weeks</div>
+        <div>
+          <div class="exp-role">AI &amp; Machine Learning Intern</div>
+          <div class="exp-org">Internshala</div>
+          <ul>
+            <li>Worked on AI/ML projects including object detection using YOLO</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">6 Weeks</div>
+        <div>
+          <div class="exp-role">Machine Learning using Python</div>
+          <div class="exp-org">NIELIT</div>
+          <ul>
+            <li>Learned machine learning concepts and implementation using Python</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">4 Weeks</div>
+        <div>
+          <div class="exp-role">Python Programming</div>
+          <div class="exp-org">Internshipwala Career</div>
+          <ul>
+            <li>Built foundational skills in Python programming</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS / STRENGTHS / HOBBIES ============ -->
+  <section id="achievements">
+    <div class="wrap">
+      <div class="section-label">04 — Achievements</div>
+      <h2 class="section-title">Recognition</h2>
+
+      <div class="achieve-card">
+        <h3>State Level Idea Pitching Competition — BIT Sindri</h3>
+        <p>Won for proposing a Regional Language AI Study Model.</p>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3 class="mini-heading">Strengths</h3>
+          <ul class="simple-list">
+            <li>Purpose-driven</li>
+            <li>Consistent and hardworking</li>
+            <li>Fast learner with a curious mind</li>
+            <li>Strong communicator</li>
+            <li>Adaptable to new environments and challenges</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mini-heading">Hobbies</h3>
+          <ul class="simple-list">
+            <li>Reading books</li>
+            <li>Cooking</li>
+            <li>Teaching</li>
+            <li>Exploring technology &amp; AI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="wrap contact-inner">
+      <div class="section-label center">05 — Contact</div>
+      <h2>Let's connect</h2>
+      <p>Open to internships and entry-level roles in software development and machine learning.</p>
+
+      <div class="contact-links">
+        <a href="mailto:tiuanisha48@gmail.com" class="btn primary">Email Me</a>
+        <!-- TODO: replace # with your actual LinkedIn URL -->
+        <a href="https://www.linkedin.com/in/anisha-tiu-a86a042b3" class="btn ghost">LinkedIn</a>
+        <!-- TODO: replace # with your actual GitHub URL -->
+        <a href="https://github.com/anishatiu" class="btn ghost">GitHub</a>
+      </div>
+
+      <div class="contact-meta">
+        tiuanisha48@gmail.com &nbsp;·&nbsp; 8521711451 &nbsp;·&nbsp; Chaibasa, Jharkhand
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">Anisha Tiu — Chaibasa,West Singhbhum, Jharkhand-833201</div>
+  </footer>
+
+  <!-- Back to top button: hidden until user scrolls down (see script.js) -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- All interactivity lives in script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
